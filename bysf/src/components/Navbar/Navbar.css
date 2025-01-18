@@ -1,0 +1,106 @@
+.containerNavbar {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 0.1fr 0.4fr auto;
+  justify-content: space-evenly;
+  background-color: var(--main-bg-color);
+  border-bottom: 5px solid var(--main-text-color);
+}
+.logoNav {
+  margin: auto;
+}
+.logoNav img {
+  width: 150px;
+  margin: 10px;
+}
+.divInput input {
+  border: none;
+  border-radius: 20px;
+  width: 400px;
+  position: relative;
+  background-color: var(--secondary-text-color);
+  border: 5px solid var(--main-text-color);
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 10px 15px;
+  margin-top: 30px;
+}
+
+.iconSearch {
+  color: #fff;
+  font-size: 1.3rem;
+  position: relative;
+}
+.btnSearch {
+  z-index: 21;
+  position: relative;
+  right: 50px;
+  top: 4px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.divInput input::placeholder {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.divInput input:focus {
+  border-color: #7a7a7a;
+  outline: none;
+}
+
+.divList .list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+}
+.divList {
+  grid-column: span 3;
+  margin: auto;
+  width: 100%;
+  background-color: #7a7a7a;
+  padding: 20px;
+}
+.list .listItem .itemLink {
+  color: var(--main-text-color);
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.list .listItem {
+  font-size: 1.5rem;
+  margin: 0 50px;
+}
+
+.itemLink:hover {
+  transition: 0.2s;
+  color: var(--secondary-text-color) !important;
+}
+
+.hamburguer {
+  display: block !important;
+  opacity: 0;
+}
+
+@media (max-width: 1000px) {
+  .divList {
+    display: none;
+  }
+  .divInput {
+    display: none;
+  }
+  .logoNav {
+    margin: 10px 0 0 0;
+    font-size: 2rem;
+  }
+  .hamburguer {
+    display: block;
+  }
+  .logoNav img {
+    width: 100px;
+    margin: 0px;
+  }
+}

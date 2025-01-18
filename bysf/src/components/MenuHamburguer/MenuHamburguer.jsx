@@ -1,0 +1,77 @@
+import React, { useState, useEffect } from "react";
+import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
+import "./MenuHamburguer.css";
+
+const MenuHamburguer = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [inputText, setInputText] = useState("");
+  const [debouncedText, setDebouncedText] = useState(inputText);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const handleChangeInput = (e) => {
+    setInputText(e.target.value);
+  };
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setDebouncedText(inputText);
+    }, 500);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [inputText]);
+
+  useEffect(() => {
+    console.log(debouncedText);
+  }, [debouncedText]);
+
+  return (
+    <div className="hamburger">
+      <button className="btnHamburguer" onClick={toggleMenu}>
+        {isMenuOpen ? (
+          <FaTimes className="icon" />
+        ) : (
+          <FaBars className="icon" />
+        )}
+      </button>
+      <div className={`divList ${isMenuOpen ? "active" : ""}`}>
+        <ul className="listMob">
+          <li className="listItem">
+            <a className="itemLink" href="#">
+              Toda a loja
+            </a>
+          </li>
+          <li className="listItem">
+            <a className="itemLink" href="#">
+              Cozinha
+            </a>
+          </li>
+          <li className="listItem">
+            <a className="itemLink" href="#">
+              Banho
+            </a>
+          </li>
+          <li className="listItem">
+            <a className="itemLink" href="#">
+              Enfeites
+            </a>
+          </li>
+        </ul>
+        <div className="divInputMob">
+          <input
+            onChange={handleChangeInput}
+            type="text"
+            placeholder="O que você precisa?"
+          />
+          <button className="btnSearchMob">
+            <FaSearch className="iconSearchMob" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MenuHamburguer;

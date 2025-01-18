@@ -1,0 +1,29 @@
+:root {
+  --main-bg-color: #F3DBE0; 
+  --main-text-color: #6D2022;
+  --secondary-text-color: #816b6c;
+  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;      
+  margin: 0;         
+  display: flex;     
+  flex-direction: column; 
+  background-color: #555;
+  color: var(--main-text-color); 
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
