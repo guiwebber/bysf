@@ -1,17 +1,17 @@
 .containerNavbar {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  grid-template-rows: 0.1fr 0.4fr auto;
+  grid-template-rows: 0fr 0fr auto;
   justify-content: space-evenly;
   background-color: var(--main-bg-color);
-  border-bottom: 5px solid var(--main-text-color);
+  border-bottom: 2px solid var(--main-text-color);
 }
 .logoNav {
   margin: auto;
 }
 .logoNav img {
-  width: 150px;
-  margin: 10px;
+  width: 120px;
+  margin-top: 5px;
 }
 .divInput input {
   border: none;
@@ -19,7 +19,7 @@
   width: 400px;
   position: relative;
   background-color: var(--secondary-text-color);
-  border: 5px solid var(--main-text-color);
+  border: 2px solid var(--main-text-color);
   font-size: 1.2rem;
   color: #fff;
   padding: 10px 15px;
@@ -45,6 +45,7 @@
 .divInput input::placeholder {
   color: #fff;
   font-size: 1.2rem;
+  opacity: 0.5;
 }
 .divInput input:focus {
   border-color: #7a7a7a;
@@ -61,7 +62,7 @@
   grid-column: span 3;
   margin: auto;
   width: 100%;
-  background-color: #7a7a7a;
+  background-color: transparent;
   padding: 20px;
 }
 .list .listItem .itemLink {
@@ -71,19 +72,15 @@
 }
 
 .list .listItem {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0 50px;
 }
 
 .itemLink:hover {
   transition: 0.2s;
-  color: var(--secondary-text-color) !important;
+  color: #a10404 !important;
 }
 
-.hamburguer {
-  display: block !important;
-  opacity: 0;
-}
 
 @media (max-width: 1000px) {
   .divList {
@@ -92,15 +89,7 @@
   .divInput {
     display: none;
   }
-  .logoNav {
-    margin: 10px 0 0 0;
-    font-size: 2rem;
-  }
-  .hamburguer {
-    display: block;
-  }
   .logoNav img {
     width: 100px;
-    margin: 0px;
   }
 }

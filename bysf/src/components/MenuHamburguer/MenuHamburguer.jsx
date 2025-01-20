@@ -28,7 +28,7 @@ const MenuHamburguer = () => {
   }, [debouncedText]);
 
   return (
-    <div className="hamburger">
+    <div className="hamburguer">
       <button className="btnHamburguer" onClick={toggleMenu}>
         {isMenuOpen ? (
           <FaTimes className="icon" />
@@ -56,6 +56,11 @@ const MenuHamburguer = () => {
           <li className="listItem">
             <a className="itemLink" href="#">
               Enfeites
+            </a>
+          </li>
+          <li className="listItem">
+            <a className="itemLink" href="#">
+              Guirlandas
             </a>
           </li>
         </ul>
