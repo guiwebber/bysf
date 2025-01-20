@@ -1,11 +1,10 @@
 /* HamburgerMenu.css */
-.hamburger {
+.hamburguer {
   display: none;
-  padding: 15px;
 }
 
 .active {
-    transition: .5s;
+  transition: 0.5s;
 }
 .divList {
   display: flex;
@@ -15,7 +14,6 @@
   font-size: 2rem;
   background-color: transparent;
   color: var(--main-text-color);
-  
 }
 
 .btnHamburguer {
@@ -23,7 +21,7 @@
   border: none;
   position: absolute;
   right: 20px;
-  top: 30px;
+  top: 40px;
   cursor: pointer;
 }
 .listMob {
@@ -37,12 +35,12 @@
   margin: 30px;
 }
 .listMob .listItem .itemLink {
-    color: var(--main-text-color);
-    font-weight: bold;
-    transition: 0.2s;
-  }
+  color: var(--main-text-color);
+  font-weight: bold;
+  transition: 0.2s;
+}
 
-.divInputMob input {
+/* .divInputMob input {
   padding: 5px;
   border: none;
   border-radius: 20px;
@@ -81,7 +79,7 @@
 .divInputMob input:focus {
     border-color: #fff;
     outline: none;
-}
+} */
 @media (max-width: 1000px) {
   .divList {
     display: none;

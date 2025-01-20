@@ -2,12 +2,15 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import "./MenuHamburguer.css";
 
-const MenuHamburguer = () => {
+const MenuHamburguer = ({ teste }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [inputText, setInputText] = useState("");
   const [debouncedText, setDebouncedText] = useState(inputText);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    
+  };
 
   const handleChangeInput = (e) => {
     setInputText(e.target.value);
@@ -28,7 +31,7 @@ const MenuHamburguer = () => {
   }, [debouncedText]);
 
   return (
-    <div className="hamburguer">
+    <div className={`hamburguer`}>
       <button className="btnHamburguer" onClick={toggleMenu}>
         {isMenuOpen ? (
           <FaTimes className="icon" />
@@ -64,7 +67,7 @@ const MenuHamburguer = () => {
             </a>
           </li>
         </ul>
-        <div className="divInputMob">
+        {/* <div className="divInputMob">
           <input
             onChange={handleChangeInput}
             type="text"
@@ -73,7 +76,7 @@ const MenuHamburguer = () => {
           <button className="btnSearchMob">
             <FaSearch className="iconSearchMob" />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
