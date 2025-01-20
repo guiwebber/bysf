@@ -1,0 +1,74 @@
+.divFooter {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--main-bg-color);
+  border-top: 2px solid var(--main-text-color);
+  align-items: center;
+  padding: 20px;
+  font-weight: 100;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.frameMap {
+  width: 400px;
+  height: 200px;
+}
+.location h3 {
+  text-align: center;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.socialMedias {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkSocial {
+  margin: 10px;
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.iconsSocial {
+  font-size: 1.5rem;
+}
+
+.linksFooter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.linksFooter a {
+  margin: 10px;
+  color: var(--main-text-color);
+  transition: 0.2s;
+  text-decoration: none;
+}
+.facebook {
+    color: #3b5998;
+  
+}
+.whatsapp {
+   color: #25D366
+}
+
+.instagram {
+    color: #E1306C;
+}
+
+@media (max-width: 1000px) {
+  .divFooter {
+    flex-direction: column;
+  }
+
+  .location, .socialMedias, .linksFooter {
+    margin: 20px;
+  }
+}

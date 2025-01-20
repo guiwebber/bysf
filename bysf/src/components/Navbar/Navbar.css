@@ -23,6 +23,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .firstLink {
   background-color: var(--main-text-color);
   color: #fff !important;
@@ -37,8 +38,10 @@
 }
 .list .listItem .itemLink {
   color: var(--main-text-color);
-  font-weight: bold;
+
+  font-weight: 100;
   transition: 0.2s;
+  letter-spacing: 1px;
 }
 
 .list .listItem {
@@ -68,7 +71,6 @@
     margin: 0 1rem;
     display: flex;
   }
-  
 }
 @media (max-width: 1000px) {
   .list {
