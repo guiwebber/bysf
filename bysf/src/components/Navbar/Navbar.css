@@ -81,15 +81,27 @@
   color: #a10404 !important;
 }
 
+.hamburguer {
+  display: none ;
+}
 
 @media (max-width: 1000px) {
+  
   .divList {
     display: none;
   }
   .divInput {
     display: none;
   }
+  .logoNav {
+    margin: 10px 0 0 0;
+    font-size: 2rem;
+  }
+  .hamburguer {
+    display: block !important;
+  }
   .logoNav img {
     width: 100px;
+    margin: 5px;
   }
 }
