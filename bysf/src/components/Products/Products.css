@@ -1,0 +1,11 @@
+.containerProducts {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.divProducts {
+  display: flex;
+  margin: 30px;
+  padding: 20px;
+  justify-content: center;
+}

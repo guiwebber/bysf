@@ -1,0 +1,64 @@
+.containerCard {
+  width: 450px;
+  height: 600px;
+  border: 1px solid black;
+  margin: 15px;
+}
+
+.containerCard .img {
+  width: 100%;
+  padding: 10px;
+}
+
+.infosCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55%;
+}
+
+.spanDefault {
+  display: none;
+}
+
+.spanPromo {
+  position: absolute;
+  background-color: red;
+  margin: 15px;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+.spanTopSell {
+  position: absolute;
+  background-color: black;
+  margin: 15px;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+.spanNew {
+  position: absolute;
+  background-color: rgb(49, 161, 55);
+  margin: 15px;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+
+.prevPrice {
+  text-decoration:line-through;
+  font-size: 1.3rem;
+}
+
+
+.divPrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    margin: 10px;
+}
