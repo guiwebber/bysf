@@ -9,7 +9,7 @@ function Card({ name, description, image, price, type, spanType, prevPrice }) {
         <img className="img" src={image} alt="" />
       </div>
       <div className="infosCard">
-        <h3 className="name">{name}</h3>
+        <h4 className="name">{name}</h4>
         <p className="description">{description}</p>
         <div className="divPrice">
           <span className="prevPrice">{prevPrice}</span>

@@ -11,7 +11,7 @@
   flex-wrap: wrap;
 }
 
-.containerProducts h1 {
+.containerProducts h2 {
   font-weight: 100;
 }
 
@@ -37,4 +37,17 @@
 .iconsConditions {
   font-size: 2rem;
   margin: 0 15px;
+}
+
+@media (max-width: 1000px) {
+  .divConditions {
+    flex-direction: column;
+  }
+  .divConditions .condition {
+    border-right: none;
+    border-bottom: 2px solid rgba(202, 202, 202, 0.671);
+  }
+  .divConditions .condition:last-child {
+    border-bottom: none;
+  }
 }

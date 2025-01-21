@@ -22,7 +22,7 @@ function Products() {
           <p>Em até 6 x no Cartão</p>
         </div>
       </div>
-      <h1>Promoções</h1>
+      <h2>Promoções</h2>
       <div className="divProducts">
         <Card
           name={"Produto 1"}
