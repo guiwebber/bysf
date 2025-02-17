@@ -145,7 +145,6 @@
 
 @media (max-width: 1240px) {
   .containerNavbar {
-    padding: 10px 30px;
     justify-content: space-between;
   }
 

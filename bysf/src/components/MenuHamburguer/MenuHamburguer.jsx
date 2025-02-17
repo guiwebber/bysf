@@ -76,8 +76,8 @@ const MenuHamburguer = ({ teste }) => {
             <FaSearch className="iconSearchMob" />
           </button>
         </div>
-        <div className="cartDiv">
-          <div className="divCart">
+        <div className="divCart">
+          <div className="subDivCart">
             <FaShoppingCart className="iconCart" />
             <p className="itensCart">0</p>
           </div>

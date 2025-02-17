@@ -80,6 +80,23 @@
     border-color: #fff;
     outline: none;
 } 
+.divCart {
+  width: fit-content;
+  margin: auto;
+}
+
+.subDivCart {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+.itensCart {
+  position: absolute;
+}
+
+.divTextCart .price {
+  margin: auto;
+}
 @media (max-width: 1000px) {
   .divList {
     display: none;
