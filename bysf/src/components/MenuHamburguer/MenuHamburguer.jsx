@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
+import { FaBars, FaTimes, FaSearch, FaShoppingCart } from "react-icons/fa";
 import "./MenuHamburguer.css";
 
 const MenuHamburguer = ({ teste }) => {
@@ -9,7 +9,6 @@ const MenuHamburguer = ({ teste }) => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    
   };
 
   const handleChangeInput = (e) => {
@@ -67,7 +66,7 @@ const MenuHamburguer = ({ teste }) => {
             </a>
           </li>
         </ul>
-        {/* <div className="divInputMob">
+        <div className="divInputMob">
           <input
             onChange={handleChangeInput}
             type="text"
@@ -76,7 +75,17 @@ const MenuHamburguer = ({ teste }) => {
           <button className="btnSearchMob">
             <FaSearch className="iconSearchMob" />
           </button>
-        </div> */}
+        </div>
+        <div className="cartDiv">
+          <div className="divCart">
+            <FaShoppingCart className="iconCart" />
+            <p className="itensCart">0</p>
+          </div>
+          <div className="divTextCart">
+            <p>Meu carrinho</p>
+            <p className="price">R$ 00,00</p>
+          </div>
+        </div>
       </div>
     </div>
   );

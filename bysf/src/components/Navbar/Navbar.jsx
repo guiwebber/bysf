@@ -43,10 +43,13 @@ function Navbar() {
         </div>
         <div className="rightNavDiv">
           <div className="divCart">
-          <p className="itensCart">0</p>
-          <FaShoppingCart className="iconCart" />
+            <FaShoppingCart className="iconCart" />
+            <p className="itensCart">0</p>
           </div>
-          <div>Meu carrinho</div>
+          <div className="divTextCart">
+            <p>Meu carrinho</p>
+            <p className="price">R$ 00,00</p>
+          </div>
         </div>
       </div>
       <div className="subContainerNav">

@@ -40,7 +40,7 @@
   transition: 0.2s;
 }
 
-/* .divInputMob input {
+.divInputMob input {
   padding: 5px;
   border: none;
   border-radius: 20px;
@@ -79,7 +79,7 @@
 .divInputMob input:focus {
     border-color: #fff;
     outline: none;
-} */
+} 
 @media (max-width: 1000px) {
   .divList {
     display: none;
