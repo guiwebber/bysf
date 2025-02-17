@@ -1,8 +1,8 @@
 .containerBanner {
   background-color: #555;
   height: 50vh;
-  width: 75%;
-  margin: 100px auto;
+  width: 100%;
+  margin: auto;
   color: #fff;
   font-size: 5rem;
   display: flex;
@@ -16,55 +16,6 @@
   object-fit: cover;
 }
 
-.divInput {
-  position: absolute;
-  top: 50%;
-  z-index: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: fit-content;
-  width: 400px;
-  height: 90px;
-}
-
-.divInput input {
-  border: none;
-  width: 100%;
-  position: relative;
-  background-color: var(--secondary-text-color);
-  border: 2px solid var(--main-bg-color);
-  font-size: 1.2rem;
-  color: #fff;
-  padding: 10px 15px;
-  margin-top: 30px;
-}
-
-.iconSearch {
-  color: #fff;
-  font-size: 1.3rem;
-  position: relative;
-}
-.btnSearch {
-  z-index: 21;
-  position: relative;
-  left: 350px;
-  top: -88px;
-  background-color: transparent;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.divInput input::placeholder {
-  color: #fff;
-  font-size: 1.2rem;
-  opacity: 0.5;
-}
-.divInput input:focus {
-  border-color: var(--main-text-color);
-  outline: none;
-}
 
 @media (max-width: 1000px) {
   .containerBanner {
