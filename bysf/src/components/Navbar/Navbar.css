@@ -3,6 +3,7 @@
   width: 100%;
   top: 0;
   z-index: 2;
+  background-color: #e2c2be;
 }
 
 .divInput {
@@ -179,5 +180,8 @@
   
   .divInput {
     display: none;
+  }
+  .containerNavbar {
+    position: fixed;
   }
 }

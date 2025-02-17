@@ -5,6 +5,13 @@
 
 .active {
   transition: 0.5s;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 92px;
+  left: 0;
+  background-color: #e2c2be;
+  z-index: 110;
 }
 .divList {
   display: flex;
@@ -45,7 +52,6 @@
   border: none;
   border-radius: 20px;
   width: 300px;
-  position: relative;
   background-color: var(--secondary-text-color);
   border: 2px solid var(--main-text-color);
   font-size: 1.3rem;
@@ -53,7 +59,10 @@
   padding-left: 15px;
 }
 .divInputMob {
-  margin-left: 50px;
+  margin: 0 auto;
+  width: 300px;
+  
+  position: relative;
 }
 
 .iconSearchMob {
@@ -63,13 +72,15 @@
   margin: 2px;
 }
 .btnSearchMob {
-  position: relative;
-  right: 50px;
-  top: 5px;
+  position: absolute;
   background-color: transparent;
   border: none;
   padding: 10px;
   cursor: pointer;
+  background-color: var(--main-text-color);
+  border-radius: 0px 20px 20px 0;
+  height: 39px;
+  right: 0px;
 }
 .divInputMob input::placeholder {
   color: #fff;
@@ -77,9 +88,9 @@
   opacity: 0.5;
 }
 .divInputMob input:focus {
-    border-color: #fff;
-    outline: none;
-} 
+  border-color: #636161;
+  outline: none;
+}
 .divCart {
   width: fit-content;
   margin: auto;
@@ -89,6 +100,9 @@
   position: relative;
   width: fit-content;
   margin: auto;
+}
+.divTextCart {
+  text-align: center;
 }
 .itensCart {
   position: absolute;

@@ -1,7 +1,7 @@
 .containerCard {
   width: 450px;
   height: 600px;
-  border: 1px solid #a7a7a7;
+  border: 3px solid black;
   margin: 15px;
 }
 
@@ -19,10 +19,15 @@
 
 .infosCard h4 {
   font-weight: 600;
-  color: black;
+  font-size: 1.5rem;
 }
 .infosCard .description {
   font-size: 1rem;
+}
+
+.infosCard h4,
+.infosCard p {
+  margin: 10px;
 }
 
 .spanDefault {
@@ -60,12 +65,39 @@
 .prevPrice {
   text-decoration: line-through;
   font-size: 1.3rem;
+  color: black;
 }
 
 .divPrice {
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
+}
+
+.divPrice .price {
+  font-size: 1.3rem;
+  color: rgb(90, 147, 255);
+}
+
+.divProducts {
+  max-width: 1920px;
+}
+
+@media (max-width: 1240px) {
+  .containerCard {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 780px) {
+  .containerCard {
+    height: 500px;
+    width: 90%;
+    margin: 15px auto;
+  }
+  .topContainerCard {
+    width: 100%;
+  }
 }
