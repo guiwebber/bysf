@@ -56,32 +56,32 @@ function Navbar() {
         <ul className="list">
           <li className="listItem">
             <a href="#" className="itemLink">
-              ITEM
+              Toda a loja
             </a>
           </li>
           <li className="listItem">
             <a href="#" className="itemLink">
-              ITEM
+              Guirlanda
             </a>
           </li>
           <li className="listItem">
             <a href="#" className="itemLink">
-              ITEM
+              Cozinha
             </a>
           </li>
           <li className="listItem">
             <a href="#" className="itemLink">
-              ITEM
+              Banho
             </a>
           </li>
           <li className="listItem">
             <a href="#" className="itemLink">
-              ITEM
+              Enfeites
             </a>
           </li>
           <li className="listItem">
             <a href="#" className="itemLink">
-              ITEM
+              Panos
             </a>
           </li>
         </ul>
