@@ -1,23 +1,37 @@
 import React from "react";
 import "./Footer.css";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
-import logo from '../../assets/images/logo.png'
+import logo from "../../assets/images/logo.png";
 function Footer() {
   return (
     <div className="divFooter">
-      
       <div className="linksFooter">
         <img className="logo" src={logo} alt="" />
         <h3 className="titleFooter">Institucional</h3>
-        <a href="#">Contato</a>
-        <a href="#">Quem somos</a>
-        <a href="#">Políticas de devolução</a>
+        <a className="aFooter" href="#">
+          Contato
+        </a>
+        <a className="aFooter" href="#">
+          Quem somos
+        </a>
+        <a className="aFooter" href="#">
+          Políticas de devolução
+        </a>
       </div>
       <div className="socialMedias">
         <h3 className="titleFooter">Redes sociais</h3>
-        <a className="linkSocial" href="#"><FaFacebook className="iconsSocial facebook"/> Facebook</a>
-        <a className="linkSocial" href="#"><FaInstagram className="iconsSocial instagram"/> Instagram</a>
-        <a className="linkSocial" href="#"><FaWhatsapp className="iconsSocial whatsapp"/> Whatsapp</a>
+        <a className="aFooter" href="#">
+          {/* <FaFacebook className="iconsSocial facebook" /> */}
+           Facebook
+        </a>
+        <a className="aFooter" href="#">
+          {/* <FaInstagram className="iconsSocial instagram" /> */}
+           Instagram
+        </a>
+        <a className="aFooter" href="#">
+          {/* <FaWhatsapp className="iconsSocial whatsapp" /> */}
+           Whatsapp
+        </a>
       </div>
       <div className="location">
         <h3 className="titleFooter">Onde estamos localizados</h3>
