@@ -5,6 +5,17 @@
   z-index: 2;
   background-color: var(--main-bg-color);
 }
+.searchResults {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.searchItem {
+  padding: 8px;
+  cursor: pointer;
+}
 
 .divInput {
   width: 400px;

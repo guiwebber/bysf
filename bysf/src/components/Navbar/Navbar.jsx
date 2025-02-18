@@ -3,13 +3,13 @@ import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import "./Navbar.css";
 import MenuHamburguer from "../MenuHamburguer/MenuHamburguer";
 import logo from "../../assets/images/logo.png";
+import data from "../../../products.json";
+
 function Navbar() {
   const [inputText, setInputText] = useState("");
-
   const [debouncedText, setDebouncedText] = useState(inputText);
-  const handleChangeInput = (e) => {
-    setInputText(e.target.value);
-  };
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [showAllResults, setShowAllResults] = useState(false);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -22,8 +22,27 @@ function Navbar() {
   }, [inputText]);
 
   useEffect(() => {
-    console.log(debouncedText);
+    if (debouncedText) {
+      const results = data.filter((item) =>
+        item.name.toLowerCase().includes(debouncedText.toLowerCase())
+      );
+      setFilteredProducts(results);
+    } else {
+      setFilteredProducts([]);
+    }
   }, [debouncedText]);
+
+  const handleChangeInput = (e) => {
+    setInputText(e.target.value);
+    setShowAllResults(false);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      setShowAllResults(true);
+    }
+  };
+
   return (
     <div className="containerNavbar">
       <div className="flex">
@@ -33,13 +52,22 @@ function Navbar() {
         <div className="divInput">
           <input
             onChange={handleChangeInput}
+            onKeyPress={handleKeyPress}
             type="text"
             placeholder="O que você precisa?"
           />
-
           <button className="btnSearch">
             <FaSearch className="iconSearch" />
           </button>
+          {debouncedText && (
+            <div className="searchResults">
+              {(showAllResults ? filteredProducts : filteredProducts.slice(0, 3)).map((item, index) => (
+                <div key={index} className="searchItem">
+                  {item.name}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
         <div className="rightNavDiv">
           <div className="divCart">

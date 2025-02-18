@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 function Card({ name, description, image, price, type, spanType, prevPrice }) {
-  console.log(type);
+
   return (
     <div className={`containerCard ${type}`}>
       <div className="divImg">
