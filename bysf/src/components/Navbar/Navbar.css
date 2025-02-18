@@ -3,7 +3,7 @@
   width: 100%;
   top: 0;
   z-index: 2;
-  background-color: #e2c2be;
+  background-color: var(--main-bg-color);
 }
 
 .divInput {

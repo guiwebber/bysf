@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   background-color: var(--main-bg-color);
-  border-top: 2px solid var(--main-text-color);
+  border-top: 3px solid var(--main-text-color);
   align-items: center;
   padding: 20px;
   font-weight: 100;
@@ -16,7 +16,6 @@
 .location h3 {
   text-align: center;
   padding: 10px;
-  font-weight: 100;
 }
 
 .socialMedias {
@@ -27,12 +26,13 @@
 .linkSocial {
   margin: 10px;
   text-decoration: none;
-  color: var(--main-text-color);
+  color: #7c7c7c;
   transition: 0.2s;
   display: flex;
   align-items: center;
   width: 120px;
   justify-content: space-between;
+  font-weight: 100;
 }
 
 .iconsSocial {
@@ -43,24 +43,37 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  
+  color: #7c7c7c;
 }
 
 .linksFooter a {
   margin: 10px;
-  color: var(--main-text-color);
+  color: #7c7c7c;
+  font-weight: 100;
   transition: 0.2s;
   text-decoration: none;
 }
 .facebook {
-    color: #3b5998;
-  
+  color: #3b5998;
 }
 .whatsapp {
-   color: #25D366
+  color: #25d366;
 }
 
 .instagram {
-    color: #E1306C;
+  color: #e1306c;
+}
+.titleFooter {
+  margin: 20px 0 10px 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: brown;
+}
+.logo {
+  width: 120px;
+  margin: auto;
 }
 
 @media (max-width: 1000px) {
@@ -68,7 +81,9 @@
     flex-direction: column;
   }
 
-  .location, .socialMedias, .linksFooter {
+  .location,
+  .socialMedias,
+  .linksFooter {
     margin: 20px;
   }
 }

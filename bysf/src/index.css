@@ -1,7 +1,8 @@
 :root {
-  --main-bg-color: #F3DBE0; 
-  --main-text-color: #6D2022;
+  --main-bg-color: #f0f0f0e1; 
+  --main-text-color: #bd8585d8;
   --secondary-text-color: #816b6c;
+  --secondary-bg-color: #bbbbbbd8;
   
 }
 
@@ -11,7 +12,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body {
@@ -34,10 +35,12 @@ html, body {
 
 ::-webkit-scrollbar-track {
   background: transparent !important;
-
+  
 }
 
 ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
   background: var(--main-text-color);
+
 }
 
