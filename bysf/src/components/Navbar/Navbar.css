@@ -18,7 +18,7 @@
   background-color: var(--secondary-text-color);
   border: 2px solid var(--main-text-color);
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--main-text-color);
   padding: 10px 15px;
   margin-top: 30px;
 
@@ -33,21 +33,21 @@
 .btnSearch {
   z-index: 21;
   position: relative;
-  left: 358px;
-  top: -44.5px;
+  left: 359px;
+  top: -45px;
   background-color: transparent;
   border: none;
   padding: 10px;
   cursor: pointer;
   background-color: var(--main-text-color);
   width: 40px;
-  height: 42.5px;
+  height: 44px;
 
   border-radius: 0px 40px 40px 0;
 }
 
 .divInput input::placeholder {
-  color: #fff;
+  color: #4b4a4a;
   font-size: 1.2rem;
   opacity: 0.5;
 }

@@ -80,4 +80,14 @@
   .linksFooter {
     margin: 20px;
   }
+
+  .titleFooter {
+    text-align: center;
+  }
+  .aFooter {
+    justify-content: center;
+  }
+  .logo {
+    margin: auto;
+  }
 }

@@ -10,7 +10,7 @@
   width: 100%;
   top: 92px;
   left: 0;
-  background-color: #e2c2be;
+  background-color: var(--tertiary-bg-color);
   z-index: 110;
 }
 .divList {
@@ -52,7 +52,7 @@
   border: none;
   border-radius: 20px;
   width: 300px;
-  background-color: var(--secondary-text-color);
+  background-color: var(--tertiary-text-color);
   border: 2px solid var(--main-text-color);
   font-size: 1.3rem;
   color: #fff;
@@ -61,7 +61,7 @@
 .divInputMob {
   margin: 0 auto;
   width: 300px;
-  
+
   position: relative;
 }
 
@@ -126,5 +126,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .btnSearchMob {
+    height: 38px;
+  }
+
+  .divCart {
+    padding-bottom: 30px;
   }
 }
