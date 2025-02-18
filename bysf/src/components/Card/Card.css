@@ -1,16 +1,18 @@
 .containerCard {
   width: 450px;
   height: 600px;
-  border: 3px solid black;
   margin: 15px;
 }
 
 .containerCard .img {
   width: 100%;
   height: 300px;
-  padding: 10px;
 }
-
+.divImg {
+  
+  border: 1px solid #CCC;
+  padding: 50px 0;
+}
 .infosCard {
   display: flex;
   flex-direction: column;
@@ -65,17 +67,17 @@
 .prevPrice {
   text-decoration: line-through;
   font-size: 1.3rem;
-  color: black;
+  color: rgb(102, 102, 102);
 }
 
 .divPrice {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 10px;
 }
 
+.divPrice .flex {
+  justify-content: center;
+  align-items: center;
+}
 .divPrice .price {
   font-size: 1.3rem;
   color: rgb(90, 147, 255);

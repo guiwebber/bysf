@@ -34,7 +34,7 @@
 }
 
 .aFooter:hover {
-  color: #e1306c;
+  color: var(--main-text-color);
 }
 
 .iconsSocial {
@@ -64,7 +64,7 @@
   text-align: justify;
   font-size: 1.4rem;
   font-weight: 100;
-  color: rgb(146, 52, 52);
+  color: var(--main-text-color);
 }
 .logo {
   width: 120px;

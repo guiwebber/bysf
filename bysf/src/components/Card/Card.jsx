@@ -12,8 +12,10 @@ function Card({ name, description, image, price, type, spanType, prevPrice }) {
         <h4 className="name">{name}</h4>
         <p className="description">{description}</p>
         <div className="divPrice">
-          <span className="prevPrice">{prevPrice}</span>
-          <p className="price">R$ {price}</p>
+          <div className="flex">
+            <span className="prevPrice">{prevPrice}</span>
+            <p className="price">R$ {price}</p>
+          </div>
         </div>
       </div>
     </div>
