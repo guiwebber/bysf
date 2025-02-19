@@ -2,7 +2,7 @@
   {
     "name": "Guirlanda de Páscoa",
     "description": "Guirlanda decorativa com coelhos e flores em feltro.",
-    "image": "/src/assets/images/products/img1.jpeg",
+    "image": "./products/img1.jpeg",
     "price": 85.9,
     "type": "Promoção",
     "spanType": "spanPromo",
@@ -11,7 +11,7 @@
   {
     "name": "Pano de Prato Bordado",
     "description": "Pano de prato com bordado em patchwork de galinhas.",
-    "image": "/src/assets/images/products/img2.jpeg",
+    "image": "./products/img2.jpeg",
     "price": 25.0,
     "type": "Mais vendido",
     "spanType": "spanTopSell",
@@ -20,7 +20,7 @@
   {
     "name": "Coelho de Enfeite",
     "description": "Coelho de tecido com laço xadrez, ideal para decoração de Páscoa.",
-    "image": "/src/assets/images/products/img3.jpeg",
+    "image": "./products/img3.jpeg",
     "price": 45.0,
     "type": "Novo",
     "spanType": "spanNew",
@@ -29,7 +29,7 @@
   {
     "name": "Centro de Mesa Patchwork",
     "description": "Centro de mesa feito à mão com tecidos em tons pastel.",
-    "image": "/src/assets/images/products/img4.jpeg",
+    "image": "./products/img4.jpeg",
     "price": 60.0,
     "type": "",
     "spanType": "",
@@ -38,7 +38,7 @@
   {
     "name": "Almofada Patchwork",
     "description": "Almofada artesanal com aplicação de corações.",
-    "image": "/src/assets/images/products/img5.jpeg",
+    "image": "./products/img5.jpeg",
     "price": 55.0,
     "type": "Promoção",
     "spanType": "spanPromo",
@@ -47,7 +47,7 @@
   {
     "name": "Guirlanda Natalina",
     "description": "Guirlanda feita com tecidos natalinos e enfeites dourados.",
-    "image": "/src/assets/images/products/img6.jpeg",
+    "image": "./products/img6.jpeg",
     "price": 95.0,
     "type": "Mais vendido",
     "spanType": "spanTopSell",
@@ -56,7 +56,7 @@
   {
     "name": "Puxa-Saco Patchwork",
     "description": "Organizador de sacos plásticos com estampa floral.",
-    "image": "/src/assets/images/products/img7.jpeg",
+    "image": "./products/img7.jpeg",
     "price": 30.0,
     "type": "Novo",
     "spanType": "spanNew",
@@ -65,7 +65,7 @@
   {
     "name": "Jogo Americano Patchwork",
     "description": "Conjunto com 4 jogos americanos coloridos.",
-    "image": "/src/assets/images/products/img8.jpeg",
+    "image": "./products/img8.jpeg",
     "price": 70.0,
     "type": "Promoção",
     "spanType": "spanPromo",
@@ -74,7 +74,7 @@
   {
     "name": "Guirlanda de Passarinhos",
     "description": "Guirlanda artesanal com passarinhos em feltro.",
-    "image": "/src/assets/images/products/img9.jpeg",
+    "image": "./products/img9.jpeg",
     "price": 89.9,
     "type": "",
     "spanType": "",
@@ -83,7 +83,7 @@
   {
     "name": "Coelho de Pelúcia Artesanal",
     "description": "Coelho feito à mão com tecido macio e acabamento delicado.",
-    "image": "/src/assets/images/products/img1.jpeg",
+    "image": "./products/img1.jpeg",
     "price": 50.0,
     "type": "Mais vendido",
     "spanType": "spanTopSell",
@@ -92,7 +92,7 @@
   {
     "name": "Toalha de Mesa Patchwork",
     "description": "Toalha artesanal com estampas variadas e acabamento bordado.",
-    "image": "/src/assets/images/products/img2.jpeg",
+    "image": "./products/img2.jpeg",
     "price": 120.0,
     "type": "Novo",
     "spanType": "spanNew",
@@ -101,7 +101,7 @@
   {
     "name": "Guirlanda Infantil",
     "description": "Guirlanda personalizada com nome e bichinhos de feltro.",
-    "image": "/src/assets/images/products/img3.jpeg",
+    "image": "./products/img3.jpeg",
     "price": 110.0,
     "type": "Promoção",
     "spanType": "spanPromo",
@@ -110,7 +110,7 @@
   {
     "name": "Pano de Prato com Barrado",
     "description": "Pano de prato com barrado de crochê e aplicações florais.",
-    "image": "/src/assets/images/products/img4.jpeg",
+    "image": "./products/img4.jpeg",
     "price": 29.9,
     "type": "",
     "spanType": "",
@@ -119,7 +119,7 @@
   {
     "name": "Guirlanda de Outono",
     "description": "Guirlanda com folhas secas e mini abóboras de tecido.",
-    "image": "/src/assets/images/products/img5.jpeg",
+    "image": "./products/img5.jpeg",
     "price": 95.0,
     "type": "Mais vendido",
     "spanType": "spanTopSell",
@@ -128,7 +128,7 @@
   {
     "name": "Caminho de Mesa Patchwork",
     "description": "Caminho de mesa colorido e costurado à mão.",
-    "image": "/src/assets/images/products/img6.jpeg",
+    "image": "./products/img6.jpeg",
     "price": 80.0,
     "type": "Promoção",
     "spanType": "spanPromo",
@@ -137,7 +137,7 @@
   {
     "name": "Coelho de Madeira",
     "description": "Coelho artesanal em madeira pintada à mão.",
-    "image": "/src/assets/images/products/img7.jpeg",
+    "image": "./products/img7.jpeg",
     "price": 65.0,
     "type": "Novo",
     "spanType": "spanNew",
@@ -146,7 +146,7 @@
   {
     "name": "Jogo de Panos de Prato",
     "description": "Kit com 3 panos de prato bordados.",
-    "image": "/src/assets/images/products/img8.jpeg",
+    "image": "./products/img8.jpeg",
     "price": 75.0,
     "type": "Mais vendido",
     "spanType": "spanTopSell",
@@ -155,7 +155,7 @@
   {
     "name": "Guirlanda de Bebê",
     "description": "Guirlanda delicada com nome personalizado e bichinhos fofos.",
-    "image": "/src/assets/images/products/img9.jpeg",
+    "image": "./products/img9.jpeg",
     "price": 105.0,
     "type": "",
     "spanType": "",
@@ -164,7 +164,7 @@
   {
     "name": "Capa de Almofada Patchwork",
     "description": "Capa de almofada com retalhos de tecido coloridos.",
-    "image": "/src/assets/images/products/img1.jpeg",
+    "image": "./products/img1.jpeg",
     "price": 40.0,
     "type": "Promoção",
     "spanType": "spanPromo",
@@ -173,7 +173,7 @@
   {
     "name": "Coelho com Cestinha",
     "description": "Coelho de tecido segurando uma cestinha de chocolates.",
-    "image": "/src/assets/images/products/img1.jpeg",
+    "image": "./products/img1.jpeg",
     "price": 55.0,
     "type": "Mais vendido",
     "spanType": "spanTopSell",
