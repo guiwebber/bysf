@@ -15,6 +15,7 @@ function Card({ name, description, image, price, type, spanType, prevPrice, onCa
             <span className="prevPrice">
               {prevPrice !== 0 && (
                 <span className="prevPrice">
+                  <span>R$ </span>
                   {prevPrice.toFixed(2).replace(".", ",")}
                 </span>
               )}
