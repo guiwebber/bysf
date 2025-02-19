@@ -22,6 +22,7 @@ function Card({ name, description, image, price, type, spanType, prevPrice, onCa
             </span>
             <p className="price">R$ {price.toFixed(2).replace(".", ",")}</p>
           </div>
+          <button className="btnAdd">+ Adicionar</button>
         </div>
       </div>
     </div>
