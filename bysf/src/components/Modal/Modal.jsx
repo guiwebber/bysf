@@ -1,9 +1,8 @@
 import React from "react";
 import "./Modal.css"; // Crie seu estilo de modal
 import ButtonAdd from "../ButtonAdd/ButtonAdd";
-import img from "../../assets/images/img1.jpg";
 function Modal({ isOpen, onClose, product }) {
-  if (!isOpen) return null;
+  if (!isOpen || !product) return null;
 
   return (
     <div className="modalOverlay" onClick={onClose}>
@@ -13,7 +12,7 @@ function Modal({ isOpen, onClose, product }) {
             X
           </button>
           <h2>{product.name}</h2>
-          <img className="imgModal" src={img} alt={product.name} />
+          <img className="imgModal" src={product.image} alt={product.name} />
           <p>{product.description}</p>
           <p>R$ {product.price.toFixed(2).replace(".", ",")}</p>
           {product.prevPrice !== 0 && (

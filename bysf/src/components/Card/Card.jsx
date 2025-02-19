@@ -1,6 +1,5 @@
 import React from "react";
 import "./Card.css";
-import img from "../../assets/images/img1.jpg";
 
 import ButtonAdd from "../ButtonAdd/ButtonAdd";
 function Card({
@@ -22,7 +21,7 @@ function Card({
         }
       >
         <span className={`${spanType}`}>{type}</span>
-        <img className="img" src={img} alt={name} />
+        <img className="img" src={image} alt={name} />
       </div>
       <div className="infosCard">
         <h4
