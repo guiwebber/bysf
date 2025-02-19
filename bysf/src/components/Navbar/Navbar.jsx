@@ -15,7 +15,9 @@ function Navbar() {
         <div className="logoNav">
           <img src={logo} alt="" />
         </div>
-        <SearchInput onResultsChange={setFilteredProducts} />
+        <div className="desktopInput">
+        <SearchInput  onResultsChange={setFilteredProducts} />
+        </div>
         <div className="rightNavDiv">
           <div className="divCart">
             <FaShoppingCart className="iconCart" />

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaSearch, FaShoppingCart } from "react-icons/fa";
 import "./MenuHamburguer.css";
+import SearchInput from "../SearchInput/SearchInput";  // Certifique-se de importar o componente corretamente
 
 const MenuHamburguer = ({ teste }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [inputText, setInputText] = useState("");
   const [debouncedText, setDebouncedText] = useState(inputText);
 
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -39,6 +41,10 @@ const MenuHamburguer = ({ teste }) => {
         )}
       </button>
       <div className={`divList ${isMenuOpen ? "active" : ""}`}>
+        <div className="divInputMob">
+          <SearchInput onResultsChange={setFilteredProducts} />  {/* Substituindo o input */}
+          
+        </div>
         <ul className="listMob">
           <li className="listItem">
             <a className="itemLink" href="#">
@@ -66,16 +72,6 @@ const MenuHamburguer = ({ teste }) => {
             </a>
           </li>
         </ul>
-        <div className="divInputMob">
-          <input
-            onChange={handleChangeInput}
-            type="text"
-            placeholder="O que você precisa?"
-          />
-          <button className="btnSearchMob">
-            <FaSearch className="iconSearchMob" />
-          </button>
-        </div>
         <div className="divCart">
           <div className="subDivCart">
             <FaShoppingCart className="iconCart" />
