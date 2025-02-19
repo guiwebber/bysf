@@ -95,17 +95,6 @@
   font-size: 0.9rem;
 }
 
-.btnAdd {
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.btnAdd:hover {
-  background-color: #06850c;
-}
 
 @media (max-width: 1240px) {
   .containerCard {

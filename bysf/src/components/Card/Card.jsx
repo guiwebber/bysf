@@ -1,6 +1,8 @@
 import React from "react";
 import "./Card.css";
 import img from '../../assets/images/img1.jpg'
+
+import ButtonAdd from "../ButtonAdd/ButtonAdd";
 function Card({ name, description, image, price, type, spanType, prevPrice, onCardClick }) {
   return (
     <div className={`containerCard ${type}`} >
@@ -22,7 +24,7 @@ function Card({ name, description, image, price, type, spanType, prevPrice, onCa
             </span>
             <p className="price">R$ {price.toFixed(2).replace(".", ",")}</p>
           </div>
-          <button className="btnAdd">+ Adicionar</button>
+          <ButtonAdd/>
         </div>
       </div>
     </div>
