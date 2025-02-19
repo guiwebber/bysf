@@ -2,6 +2,7 @@
   width: 450px;
   height: 600px;
   margin: 15px;
+  border: 1px solid red;
 }
 
 .containerCard .img {
@@ -80,11 +81,29 @@
 }
 .divPrice .price {
   font-size: 1.3rem;
-  color: rgb(90, 147, 255);
+  color: rgb(245, 138, 38);
 }
 
 .divProducts {
   max-width: 1920px;
+}
+.bold {
+  font-weight: bold;
+}
+.installments {
+  font-size: 0.9rem;
+}
+
+.btnAdd {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btnAdd:hover {
+  background-color: #06850c;
 }
 
 @media (max-width: 1240px) {
@@ -95,8 +114,18 @@
 
 @media (max-width: 780px) {
   .containerCard {
-    height: 500px;
-    width: 90%;
+    height: 600px;
+    width: 80%;
+    margin: 15px auto;
+  }
+  .topContainerCard {
+    width: 100%;
+  }
+}
+@media (max-width: 580px) {
+  .containerCard {
+    height: 600px;
+    width: 100%;
     margin: 15px auto;
   }
   .topContainerCard {
