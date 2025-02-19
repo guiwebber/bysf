@@ -4,12 +4,13 @@
   margin: 15px;
 }
 
-.containerCard .img {
+.divImg .img {
   width: 100%;
-  height: 300px;
+  height: 300px !important;
 }
 .divImg {
   
+  cursor: pointer;
   border: 1px solid #CCC;
   padding: 50px 0;
 }
@@ -22,6 +23,7 @@
 .infosCard h4 {
   font-weight: 600;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .infosCard .description {
   font-size: 1rem;
