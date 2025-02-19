@@ -25,7 +25,7 @@
 }
 
 .btnSearch {
-  z-index: 21;
+  z-index: 1;
   position: relative;
   left: 359px;
   top: -45px;

@@ -44,7 +44,13 @@ function Card({
             </span>
             <p className="price">R$ {price.toFixed(2).replace(".", ",")}</p>
           </div>
-            <p className="installments">ou 3x de {(price / 3).toFixed(2).replace(".", ",")}</p>
+          <p className="installments">
+            <span className="bold">3x</span> de{" "}
+            <span className="bold">
+
+            {(price / 3).toFixed(2).replace(".", ",")}
+            </span>
+          </p>
           <ButtonAdd />
         </div>
       </div>
