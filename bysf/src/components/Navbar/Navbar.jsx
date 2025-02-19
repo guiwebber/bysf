@@ -1,47 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
+// src/components/Navbar/Navbar.js
+import React, { useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 import "./Navbar.css";
 import MenuHamburguer from "../MenuHamburguer/MenuHamburguer";
 import logo from "../../assets/images/logo.png";
-import data from "../../../products.json";
+import SearchInput from "../SearchInput/SearchInput";
 
 function Navbar() {
-  const [inputText, setInputText] = useState("");
-  const [debouncedText, setDebouncedText] = useState(inputText);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [showAllResults, setShowAllResults] = useState(false);
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setDebouncedText(inputText);
-    }, 500);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, [inputText]);
-
-  useEffect(() => {
-    if (debouncedText) {
-      const results = data.filter((item) =>
-        item.name.toLowerCase().includes(debouncedText.toLowerCase())
-      );
-      setFilteredProducts(results);
-    } else {
-      setFilteredProducts([]);
-    }
-  }, [debouncedText]);
-
-  const handleChangeInput = (e) => {
-    setInputText(e.target.value);
-    setShowAllResults(false);
-  };
-
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      setShowAllResults(true);
-    }
-  };
 
   return (
     <div className="containerNavbar">
@@ -49,26 +15,7 @@ function Navbar() {
         <div className="logoNav">
           <img src={logo} alt="" />
         </div>
-        <div className="divInput">
-          <input
-            onChange={handleChangeInput}
-            onKeyPress={handleKeyPress}
-            type="text"
-            placeholder="O que você precisa?"
-          />
-          <button className="btnSearch">
-            <FaSearch className="iconSearch" />
-          </button>
-          {debouncedText && (
-            <div className="searchResults">
-              {(showAllResults ? filteredProducts : filteredProducts.slice(0, 3)).map((item, index) => (
-                <div key={index} className="searchItem">
-                  {item.name}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+        <SearchInput onResultsChange={setFilteredProducts} />
         <div className="rightNavDiv">
           <div className="divCart">
             <FaShoppingCart className="iconCart" />

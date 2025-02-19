@@ -1,3 +1,4 @@
+/* Navbar.css */
 .containerNavbar {
   border-bottom: 2px solid var(--main-text-color);
   width: 100%;
@@ -5,67 +6,7 @@
   z-index: 2;
   background-color: var(--main-bg-color);
 }
-.searchResults {
-  position: absolute;
-  background: white;
-  border: 1px solid #ddd;
-  max-height: 200px;
-  overflow-y: auto;
-}
-.searchItem {
-  padding: 8px;
-  cursor: pointer;
-}
 
-.divInput {
-  width: 400px;
-  height: 90px;
-}
-
-.divInput input {
-  border: none;
-  width: 100%;
-  position: relative;
-  background-color: var(--secondary-text-color);
-  border: 2px solid var(--main-text-color);
-  font-size: 1.2rem;
-  color: var(--main-text-color);
-  padding: 10px 15px;
-  margin-top: 30px;
-
-  border-radius: 40px;
-}
-
-.iconSearch {
-  color: #fff;
-  font-size: 1.3rem;
-  position: relative;
-}
-.btnSearch {
-  z-index: 21;
-  position: relative;
-  left: 359px;
-  top: -45px;
-  background-color: transparent;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  background-color: var(--main-text-color);
-  width: 40px;
-  height: 44px;
-
-  border-radius: 0px 40px 40px 0;
-}
-
-.divInput input::placeholder {
-  color: #4b4a4a;
-  font-size: 1.2rem;
-  opacity: 0.5;
-}
-.divInput input:focus {
-  border-color: var(--main-text-color);
-  outline: none;
-}
 .subContainerNav {
   display: flex;
   justify-content: space-around;
@@ -74,13 +15,16 @@
   width: 100%;
   height: 40px;
 }
+
 .logoNav {
   width: 120px;
 }
+
 .flex {
   display: flex;
   justify-content: space-around;
 }
+
 .logoNav img {
   width: 120px;
   margin-top: 5px;
@@ -96,12 +40,13 @@
   display: flex;
   flex-wrap: nowrap;
 }
+
 .list .listItem .itemLink {
   padding: 10px;
 }
+
 .list .listItem .itemLink {
   color: #fff;
-
   font-weight: 100;
   transition: 0.2s;
   letter-spacing: 1px;
@@ -118,22 +63,27 @@
   transition: 0.2s;
   color: #9c9a9a !important;
 }
+
 .rightNavDiv {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 .divCart {
   position: relative;
 }
+
 .divTextCart {
   text-align: end;
 }
+
 .divTextCart .price {
   color: #9c9a9a;
-  font-weight:800;
+  font-weight: 800;
 }
+
 .itensCart {
   background-color: #9c9a9a;
   width: 20px;
@@ -146,6 +96,7 @@
   top: -10px;
   right: -10px;
 }
+
 .iconCart {
   width: 35px;
   height: 35px;
@@ -166,32 +117,38 @@
     display: flex;
   }
 }
+
 @media (max-width: 1000px) {
   .list {
     display: none;
   }
+
   .logoNav {
     margin: 10px 0 0 0;
     font-size: 2rem;
   }
+
   .hamburguer {
     display: block !important;
   }
+
   .logoNav img {
     width: 100px;
     margin: 5px;
   }
+
   .rightNavDiv {
     display: none;
   }
-  
+
   .subContainerNav {
     display: none;
   }
-  
+
   .divInput {
     display: none;
   }
+
   .containerNavbar {
     position: fixed;
   }

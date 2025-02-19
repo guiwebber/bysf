@@ -13,8 +13,8 @@ function Card({ name, description, image, price, type, spanType, prevPrice }) {
         <p className="description">{description}</p>
         <div className="divPrice">
           <div className="flex">
-            <span className="prevPrice">{prevPrice}</span>
-            <p className="price">R$ {price}</p>
+            <span className="prevPrice">{prevPrice.toFixed(2).replace('.', ',')}</span>
+            <p className="price">R$ {price.toFixed(2).replace('.', ',')}</p>
           </div>
         </div>
       </div>
