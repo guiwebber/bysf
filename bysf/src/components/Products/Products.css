@@ -15,39 +15,80 @@
   font-weight: 100;
 }
 
-.divConditions {
-  display: flex;
-  justify-content: center;
-  margin: 50px;
-  align-items: center;
-  color: black;
-}
-
-.divConditions .condition {
-  font-size: 1.2rem;
-  border-right: 2px solid rgba(202, 202, 202, 0.671);
-  padding: 20px 30px;
-  display: flex;
-  align-items: center !important;
-}
-.divConditions .condition:last-child {
-  border-right: none;
-}
-
 .iconsConditions {
   font-size: 2rem;
   margin: 0 15px;
 }
 
+.containerCondition {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100vw;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.condition {
+  border-right: 2px solid rgba(117, 116, 116, 0.5);
+  min-width: 300px;
+  text-align: center;
+}
+
+.condition:last-child {
+  border-right: none;
+}
+
 @media (max-width: 1000px) {
-  .divConditions {
-    flex-direction: column;
+  .containerCondition {
+    justify-content: space-around;
   }
-  .divConditions .condition {
-    border-right: none;
-    border-bottom: 2px solid rgba(202, 202, 202, 0.671);
+  .condition {
+    flex: 0 0 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    scroll-snap-align: start;
+    padding: 10px;
+    text-align: center;
   }
-  .divConditions .condition:last-child {
-    border-bottom: none;
+
+  .containerCondition::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .containerCondition::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  .containerCondition::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+@media (max-width: 725px) {
+  .condition {
+    flex: 0 0 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    scroll-snap-align: start;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .containerCondition::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .containerCondition::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  .containerCondition::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 }

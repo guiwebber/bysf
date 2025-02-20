@@ -21,23 +21,16 @@ function Products() {
   };
 
   return (
-    <div className="containerProducts">
-      <div className="divConditions">
-        <div className="condition">
-          <FaTruck className="iconsConditions" />
-          <p> Entrega em todo o Brasil</p>
-        </div>
-        <div className="condition">
-          <FaBarcode className="iconsConditions" />
-          <p> Pague no Boleto ou PIX</p>
-        </div>
-        <div className="condition">
-          <FaCreditCard className="iconsConditions" />
-          <p>Em até 6 x no Cartão</p>
-        </div>
-      </div>
-      <h2>Promoções</h2>
-      <div className="divProducts">
+    <div className="containerFull">
+    <div className="containerCondition">
+      <div className="condition"><FaTruck className="iconsConditions" />
+      <p> Entrega em todo o Brasil</p></div>
+      <div className="condition"><FaBarcode className="iconsConditions" />
+      <p> Pague no Boleto ou PIX</p></div>
+      <div className="condition"><FaCreditCard className="iconsConditions" />
+      <p>Em até 6 x no Cartão</p></div>
+    </div>
+    <div className="divProducts">
         {products.map((item, index) => (
           <Card key={index} {...item} onCardClick={handleCardClick} />
         ))}
@@ -54,3 +47,4 @@ function Products() {
 }
 
 export default Products;
+
