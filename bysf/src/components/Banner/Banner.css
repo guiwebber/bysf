@@ -1,6 +1,7 @@
 .containerBanner {
   background-color: #555;
   height: 50vh;
+  min-height: 50vh;
   width: 100%;
   margin: auto;
   color: #fff;
@@ -12,8 +13,10 @@
   overflow: hidden !important;
 }
 
-.img {
+.containerBanner .img {
   object-fit: cover;
+  min-height: 50vh;
+  width: 100%;
 }
 
 
