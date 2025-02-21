@@ -1,5 +1,6 @@
 import React from "react";
 import "./Modal.css"; // Crie seu estilo de modal
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import ButtonAdd from "../ButtonAdd/ButtonAdd";
 function Modal({ isOpen, onClose, product }) {
   if (!isOpen || !product) return null;
@@ -7,7 +8,9 @@ function Modal({ isOpen, onClose, product }) {
   return (
     <div className="modalOverlay" onClick={onClose}>
       <div className="modalContent" onClick={(e) => e.stopPropagation()}>
-        <button>left</button>
+        <button className="btnNextPrev">
+          <FaArrowLeft />
+        </button>
         <div className="divContent">
           <button className="closeBtn" onClick={onClose}>
             X
@@ -25,7 +28,9 @@ function Modal({ isOpen, onClose, product }) {
           </div>
           <ButtonAdd />
         </div>
-        <button>right</button>
+        <button className="btnNextPrev">
+          <FaArrowRight />
+        </button>
       </div>
       <div className="otherImgs">
         <p>other imgs</p>

@@ -1,6 +1,6 @@
 // src/components/Navbar/Navbar.js
 import React, { useState } from "react";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart, FaSignInAlt } from "react-icons/fa";
 import "./Navbar.css";
 import MenuHamburguer from "../MenuHamburguer/MenuHamburguer";
 import logo from "../../assets/images/logo.png";
@@ -11,6 +11,7 @@ function Navbar() {
 
   return (
     <div className="containerNavbar">
+      
       <div className="flex">
         <div className="logoNav">
           <img src={logo} alt="" />

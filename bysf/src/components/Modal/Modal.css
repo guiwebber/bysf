@@ -11,7 +11,7 @@
     align-items: center;
     z-index: 2;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px;width: 1000px;
   }
   
   .modalContent {
@@ -58,4 +58,13 @@
   .otherImgs {
     background-color: aliceblue;
 
+  }
+
+  .btnNextPrev {
+    background-color: #969494;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
   }

@@ -24,7 +24,7 @@
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   margin: 30px auto;
 }
