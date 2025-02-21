@@ -11,7 +11,7 @@
     align-items: center;
     z-index: 2;
     flex-direction: column;
-    gap: 20px;width: 1000px;
+    gap: 20px;
   }
   
   .modalContent {
@@ -67,4 +67,15 @@
     border-radius: 50px;
     display: flex;
     justify-content: center;
+  }
+
+  @media (max-width:620px) {
+    .modalContent {
+      width: 500px;
+    }
+  }
+  @media (max-width:520px) {
+    .modalContent {
+      width: 450px;
+    }
   }
