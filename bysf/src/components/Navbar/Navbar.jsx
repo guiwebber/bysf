@@ -11,13 +11,18 @@ function Navbar() {
 
   return (
     <div className="containerNavbar">
-      
+      <div className="containerLogin">
+        <p>
+          <FaSignInAlt />
+          Faça login ou cadastre-se
+        </p>
+      </div>
       <div className="flex">
         <div className="logoNav">
           <img src={logo} alt="" />
         </div>
         <div className="desktopInput">
-        <SearchInput  onResultsChange={setFilteredProducts} />
+          <SearchInput onResultsChange={setFilteredProducts} />
         </div>
         <div className="rightNavDiv">
           <div className="divCart">
