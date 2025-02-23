@@ -1,6 +1,6 @@
 // src/components/Navbar/Navbar.js
 import React, { useState } from "react";
-import { FaShoppingCart, FaSignInAlt } from "react-icons/fa";
+import { FaShoppingCart, FaSignInAlt, FaUser, FaTruck } from "react-icons/fa";
 import "./Navbar.css";
 import MenuHamburguer from "../MenuHamburguer/MenuHamburguer";
 import logo from "../../assets/images/logo.png";
@@ -12,10 +12,24 @@ function Navbar() {
   return (
     <div className="containerNavbar">
       <div className="containerLogin">
-        <p>
-          <FaSignInAlt />
-          Faça login ou cadastre-se
-        </p>
+        <div className="divSignInUp">
+          <FaSignInAlt className="iconLogin" />
+          <p>
+            <a href="#">Login</a> | <a href="#">Cadastre-se</a>
+          </p>
+        </div>
+        <div className="divSignInUp">
+          <FaUser className="iconMyAcc" />
+          <p>
+            <a href="#">Minha conta</a> 
+          </p>
+        </div>
+        <div className="divSignInUp">
+          <FaTruck className="iconTracking" />
+          <p>
+            <a href="#">Rastreio rápido</a> 
+          </p>
+        </div>
       </div>
       <div className="flex">
         <div className="logoNav">

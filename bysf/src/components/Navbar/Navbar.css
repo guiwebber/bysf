@@ -15,10 +15,49 @@
   width: 100%;
   height: 40px;
 }
-
 .containerLogin {
-  padding: 10px;
-  background-color: aqua;
+  display: flex;
+  width: 100%;
+  height: 20px;
+  color: var(--main-bg-color);
+  background-color: var(--main-text-color);
+  padding: 15px 0 15px 50px;
+}
+.divSignInUp {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.iconLogin {
+  margin-right: 5px;
+  width: 12px;
+}
+
+.iconMyAcc {
+  margin-right: 5px;
+  width: 9px;
+}
+.iconTracking {
+  margin-right: 5px;
+  width: 12px;
+}
+
+.btnLogin {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.container p {
+  font-size: 0.9rem;
+}
+.containerLogin p a {
+  color: #fff;
+}
+.containerLogin p a:hover {
+  color: orange;
+  transition: 0.2s;
 }
 
 .logoNav {
