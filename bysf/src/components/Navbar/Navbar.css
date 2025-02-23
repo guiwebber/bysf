@@ -196,4 +196,7 @@
   .containerNavbar {
     position: fixed;
   }
+  .containerLogin {
+    display: none;
+  }
 }
