@@ -1,7 +1,8 @@
+// Card.jsx
 import React from "react";
 import "./Card.css";
-
 import ButtonAdd from "../ButtonAdd/ButtonAdd";
+
 function Card({
   name,
   description,
@@ -11,7 +12,13 @@ function Card({
   spanType,
   prevPrice,
   onCardClick,
+  onAddToCart, // Passar a função para o Card
 }) {
+  // Função para chamar o onAddToCart com nome e preço
+  const handleAddToCart = () => {
+    onAddToCart(price, name); // Passa o preço e o nome do produto para a função
+  };
+
   return (
     <div className={`containerCard ${type}`}>
       <div
@@ -47,11 +54,10 @@ function Card({
           <p className="installments">
             <span className="bold">3x</span> de{" "}
             <span className="bold">
-
-            {(price / 3).toFixed(2).replace(".", ",")}
+              {(price / 3).toFixed(2).replace(".", ",")}
             </span>
           </p>
-          <ButtonAdd />
+          <ButtonAdd onAddToCart={handleAddToCart} /> {/* Passa a função handleAddToCart */}
         </div>
       </div>
     </div>

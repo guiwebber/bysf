@@ -3,7 +3,7 @@
   font-size: 2rem;
 }
 
-.divProducts {
+.divProducts, .promoProducts {
   display: flex;
   margin: 30px;
   padding: 20px;

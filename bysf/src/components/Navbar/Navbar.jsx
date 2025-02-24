@@ -1,4 +1,3 @@
-// src/components/Navbar/Navbar.js
 import React, { useState } from "react";
 import { FaShoppingCart, FaSignInAlt, FaUser, FaTruck } from "react-icons/fa";
 import "./Navbar.css";
@@ -6,9 +5,7 @@ import MenuHamburguer from "../MenuHamburguer/MenuHamburguer";
 import logo from "../../assets/images/logo.png";
 import SearchInput from "../SearchInput/SearchInput";
 
-function Navbar() {
-  const [filteredProducts, setFilteredProducts] = useState([]);
-
+function Navbar({ cart, onResultsChange }) {
   return (
     <div className="containerNavbar">
       <div className="containerLogin">
@@ -21,13 +18,13 @@ function Navbar() {
         <div className="divSignInUp">
           <FaUser className="iconMyAcc" />
           <p>
-            <a href="#">Minha conta</a> 
+            <a href="#">Minha conta</a>
           </p>
         </div>
         <div className="divSignInUp">
           <FaTruck className="iconTracking" />
           <p>
-            <a href="#">Rastreio rápido</a> 
+            <a href="#">Rastreio rápido</a>
           </p>
         </div>
       </div>
@@ -36,16 +33,17 @@ function Navbar() {
           <img src={logo} alt="" />
         </div>
         <div className="desktopInput">
-          <SearchInput onResultsChange={setFilteredProducts} />
+          {/* Passando o onResultsChange para o SearchInput */}
+          <SearchInput onResultsChange={onResultsChange} />
         </div>
         <div className="rightNavDiv">
           <div className="divCart">
             <FaShoppingCart className="iconCart" />
-            <p className="itensCart">0</p>
+            <p className="itensCart">{cart.items}</p>
           </div>
           <div className="divTextCart">
             <p>Meu carrinho</p>
-            <p className="price">R$ 00,00</p>
+            <p className="price">R$ {cart.total.toFixed(2).replace(".", ",")}</p>
           </div>
         </div>
       </div>

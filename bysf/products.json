@@ -13,8 +13,8 @@
     "description": "Pano de prato com bordado em patchwork de galinhas.",
     "image": "./products/img2.jpeg",
     "price": 25.0,
-    "type": "Mais vendido",
-    "spanType": "spanTopSell",
+    "type": "",
+    "spanType": "",
     "prevPrice": 0
   },
   {
@@ -22,8 +22,8 @@
     "description": "Coelho de tecido com laço xadrez, ideal para decoração de Páscoa.",
     "image": "./products/img3.jpeg",
     "price": 45.0,
-    "type": "Novo",
-    "spanType": "spanNew",
+    "type": "",
+    "spanType": "",
     "prevPrice": 0
   },
   {
@@ -40,8 +40,8 @@
     "description": "Almofada artesanal com aplicação de corações.",
     "image": "./products/img5.jpeg",
     "price": 55.0,
-    "type": "Promoção",
-    "spanType": "spanPromo",
+    "type": "",
+    "spanType": "",
     "prevPrice": 65.0
   },
   {
@@ -49,8 +49,8 @@
     "description": "Guirlanda feita com tecidos natalinos e enfeites dourados.",
     "image": "./products/img6.jpeg",
     "price": 95.0,
-    "type": "Mais vendido",
-    "spanType": "spanTopSell",
+    "type": "",
+    "spanType": "",
     "prevPrice": 0
   },
   {
@@ -58,8 +58,8 @@
     "description": "Organizador de sacos plásticos com estampa floral.",
     "image": "./products/img7.jpeg",
     "price": 30.0,
-    "type": "Novo",
-    "spanType": "spanNew",
+    "type": "",
+    "spanType": "",
     "prevPrice": 0
   },
   {
@@ -67,8 +67,8 @@
     "description": "Conjunto com 4 jogos americanos coloridos.",
     "image": "./products/img8.jpeg",
     "price": 70.0,
-    "type": "Promoção",
-    "spanType": "spanPromo",
+    "type": "",
+    "spanType": "",
     "prevPrice": 80.0
   },
   {
@@ -85,8 +85,8 @@
     "description": "Coelho feito à mão com tecido macio e acabamento delicado.",
     "image": "./products/img1.jpeg",
     "price": 50.0,
-    "type": "Mais vendido",
-    "spanType": "spanTopSell",
+    "type": "",
+    "spanType": "",
     "prevPrice": 0
   },
   {
@@ -94,8 +94,8 @@
     "description": "Toalha artesanal com estampas variadas e acabamento bordado.",
     "image": "./products/img2.jpeg",
     "price": 120.0,
-    "type": "Novo",
-    "spanType": "spanNew",
+    "type": "",
+    "spanType": "",
     "prevPrice": 0
   },
   {
@@ -103,8 +103,8 @@
     "description": "Guirlanda personalizada com nome e bichinhos de feltro.",
     "image": "./products/img3.jpeg",
     "price": 110.0,
-    "type": "Promoção",
-    "spanType": "spanPromo",
+    "type": "",
+    "spanType": "",
     "prevPrice": 125.0
   },
   {
@@ -121,8 +121,8 @@
     "description": "Guirlanda com folhas secas e mini abóboras de tecido.",
     "image": "./products/img5.jpeg",
     "price": 95.0,
-    "type": "Mais vendido",
-    "spanType": "spanTopSell",
+    "type": "",
+    "spanType": "",
     "prevPrice": 0
   },
   {
@@ -139,8 +139,8 @@
     "description": "Coelho artesanal em madeira pintada à mão.",
     "image": "./products/img7.jpeg",
     "price": 65.0,
-    "type": "Novo",
-    "spanType": "spanNew",
+    "type": "",
+    "spanType": "",
     "prevPrice": 0
   },
   {
@@ -148,8 +148,8 @@
     "description": "Kit com 3 panos de prato bordados.",
     "image": "./products/img8.jpeg",
     "price": 75.0,
-    "type": "Mais vendido",
-    "spanType": "spanTopSell",
+    "type": " ",
+    "spanType": "",
     "prevPrice": 0
   },
   {
@@ -175,8 +175,8 @@
     "description": "Coelho de tecido segurando uma cestinha de chocolates.",
     "image": "./products/img1.jpeg",
     "price": 55.0,
-    "type": "Mais vendido",
-    "spanType": "spanTopSell",
+    "type": " ",
+    "spanType": "",
     "prevPrice": 0
   }
 ]
