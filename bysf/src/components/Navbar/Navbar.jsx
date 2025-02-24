@@ -81,7 +81,7 @@ function Navbar({ cart, onResultsChange }) {
           </li>
         </ul>
       </div>
-      <MenuHamburguer className={`hamburguer`} />
+      <MenuHamburguer className={`hamburguer`} items={cart.items} total={cart.total.toFixed(2).replace(".", ",")} />
     </div>
   );
 }

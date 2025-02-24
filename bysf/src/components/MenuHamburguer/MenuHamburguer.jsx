@@ -3,7 +3,7 @@ import { FaBars, FaTimes, FaSearch, FaShoppingCart } from "react-icons/fa";
 import "./MenuHamburguer.css";
 import SearchInput from "../SearchInput/SearchInput";  // Certifique-se de importar o componente corretamente
 
-const MenuHamburguer = ({ teste }) => {
+const MenuHamburguer = ({ items, total }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [inputText, setInputText] = useState("");
   const [debouncedText, setDebouncedText] = useState(inputText);
@@ -75,11 +75,11 @@ const MenuHamburguer = ({ teste }) => {
         <div className="divCart">
           <div className="subDivCart">
             <FaShoppingCart className="iconCart" />
-            <p className="itensCart">0</p>
+            <p className="itensCart">{items}</p>
           </div>
           <div className="divTextCart">
             <p>Meu carrinho</p>
-            <p className="price">R$ 00,00</p>
+            <p className="price">R$ {total}</p>
           </div>
         </div>
       </div>
