@@ -39,7 +39,7 @@ function Products({ onAddToCart }) {  // Receber a função aqui
       </div>
       <div className="containerProducts">
         <div className="divPromo">
-          <h1>PROMOÇÃO</h1>
+          <h1 className="titles">Promoção</h1>
           <div className="promoProducts">
             {products
               .filter((item) => item.type.toLowerCase() === "promoção")
@@ -55,7 +55,7 @@ function Products({ onAddToCart }) {  // Receber a função aqui
         </div>
 
         <div>
-          <h1>Todos os produtos</h1>
+          <h1 className="titles">Todos os produtos</h1>
           <div className="divProducts">
             {products
               .filter((item) => item.type.toLowerCase() === "")

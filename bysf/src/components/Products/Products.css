@@ -38,6 +38,9 @@
 .condition:last-child {
   border-right: none;
 }
+.titles {
+  font-size: 2.9rem;
+}
 
 @media (max-width: 1000px) {
   .containerCondition {
