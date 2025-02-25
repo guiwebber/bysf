@@ -6,7 +6,8 @@
     "price": 85.9,
     "type": "Promoção",
     "spanType": "spanPromo",
-    "prevPrice": 99.9
+    "prevPrice": 99.9,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Pano de Prato Bordado",
@@ -15,7 +16,8 @@
     "price": 25.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Coelho de Enfeite",
@@ -24,7 +26,8 @@
     "price": 45.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Centro de Mesa Patchwork",
@@ -33,7 +36,8 @@
     "price": 60.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Almofada Patchwork",
@@ -42,7 +46,8 @@
     "price": 55.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 65.0
+    "prevPrice": 65.0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Guirlanda Natalina",
@@ -51,7 +56,8 @@
     "price": 95.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Puxa-Saco Patchwork",
@@ -60,7 +66,8 @@
     "price": 30.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Jogo Americano Patchwork",
@@ -69,7 +76,8 @@
     "price": 70.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 80.0
+    "prevPrice": 80.0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Guirlanda de Passarinhos",
@@ -78,7 +86,8 @@
     "price": 89.9,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Coelho de Pelúcia Artesanal",
@@ -87,7 +96,8 @@
     "price": 50.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Toalha de Mesa Patchwork",
@@ -96,7 +106,8 @@
     "price": 120.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Guirlanda Infantil",
@@ -105,7 +116,8 @@
     "price": 110.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 125.0
+    "prevPrice": 125.0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Pano de Prato com Barrado",
@@ -114,7 +126,8 @@
     "price": 29.9,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Guirlanda de Outono",
@@ -123,7 +136,8 @@
     "price": 95.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Caminho de Mesa Patchwork",
@@ -132,7 +146,8 @@
     "price": 80.0,
     "type": "Promoção",
     "spanType": "spanPromo",
-    "prevPrice": 95.0
+    "prevPrice": 95.0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Coelho de Madeira",
@@ -141,7 +156,8 @@
     "price": 65.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Jogo de Panos de Prato",
@@ -150,7 +166,8 @@
     "price": 75.0,
     "type": " ",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Guirlanda de Bebê",
@@ -159,7 +176,8 @@
     "price": 105.0,
     "type": "",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Capa de Almofada Patchwork",
@@ -168,7 +186,8 @@
     "price": 40.0,
     "type": "Promoção",
     "spanType": "spanPromo",
-    "prevPrice": 50.0
+    "prevPrice": 50.0,
+    "typeProduct": "cozinha"
   },
   {
     "name": "Coelho com Cestinha",
@@ -177,6 +196,7 @@
     "price": 55.0,
     "type": " ",
     "spanType": "",
-    "prevPrice": 0
+    "prevPrice": 0,
+    "typeProduct": "cozinha"
   }
 ]
